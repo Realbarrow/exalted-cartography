@@ -1,8 +1,12 @@
 const scale = 3.5;
-const lineHeight = 32;
+const lineHeight = 28;
 const transportation = {
-  'Horseback': {
+  'Horseback (Regular)': {
     rate: 4,
+    maxLength: 10
+  },
+  'Horseback (Courier)': {
+    rate: 12,
     maxLength: 10
   },
   'Marching (Legionary or Forced)': {
@@ -13,12 +17,20 @@ const transportation = {
     rate: 2,
     maxLength: 10
   },
-  'Shambling Horde (Tireless, Disorganized)': {
+  'Shambling Horde': {
     rate: 0.5,
     maxLength: 20
   },
-  'Merchant Ship': {
+  'Merchant Junk': {
     rate: 6,
+    maxLength: 24
+  },
+  'Realm Trireme': {
+    rate: 7,
+    maxLength: 24
+  },
+  'Western Caravel': {
+    rate: 9,
     maxLength: 24
   },
   'Bound Agata':  {
@@ -129,7 +141,7 @@ const click = (e, journey, context) => {
 window.onload = () => {
   const map = document.getElementById('map');
   const context = map.getContext('2d');
-  context.font = 'Bold 32px Arial';
+  context.font = 'Bold 28px Arial';
 
   const journey = {
     start: null,

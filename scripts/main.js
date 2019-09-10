@@ -1,5 +1,5 @@
 const scale = 3.5;
-const lineHeight = 30;
+const lineHeight = 32;
 const transportation = {
   'Horseback (Standard)': {
     rate: 4,
@@ -141,7 +141,7 @@ const click = (e, journey, context) => {
 window.onload = () => {
   const map = document.getElementById('map');
   const context = map.getContext('2d');
-  context.font = 'Bold 30px Arial';
+  context.font = 'Bold 32px Arial';
 
   const journey = {
     start: null,

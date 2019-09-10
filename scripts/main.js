@@ -1,4 +1,4 @@
-const scale = 3.5;
+const scale = 3.45679012345679‬;
 const lineHeight = 32;
 const transportation = {
   'Horseback (Standard)': {

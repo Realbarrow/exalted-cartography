@@ -24,6 +24,7 @@ const transportation = {
   'Agata (10hr/d)':  {
     rate: 30,
     maxLength: 10
+  },
 }
 
 const deepFreeze = o => {

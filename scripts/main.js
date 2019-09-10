@@ -1,26 +1,29 @@
-const scale = 7.0;
+const scale = 14.0;
 const lineHeight = 32;
 const transportation = {
   'Horse (10hr/d)': {
     rate: 4,
     maxLength: 10
   },
-  'Merchant Ship (tireless)': {
-    rate: 6,
+  'March (Legionary/Forced)': {
+    rate: 3,
+    maxLength: 10
+  },
+  'March (Regular)': {
+    rate: 2,
+    maxLength: 10
+  },
+  'March (Shambling/Horde)': {
+    rate: 1,
     maxLength: 24
   },
-  'Cirrus Skiff (tireless, Ess 1)': {
+  'Merchant Ship': {
     rate: 6,
     maxLength: 24
   },
   'Agata (10hr/d)':  {
     rate: 30,
     maxLength: 10
-  },
-  'Stormwind Rider (10hr/d)':  {
-    rate: 100,
-    maxLength: 10
-  },
 }
 
 const deepFreeze = o => {

@@ -1,27 +1,27 @@
 const scale = 3.5;
 const lineHeight = 32;
 const transportation = {
-  'Horse (10hr/d)': {
+  'Horseback': {
     rate: 4,
     maxLength: 10
   },
-  'March (Legionary/Forced)': {
-    rate: 3,
+  'Marching (Legionary or Forced)': {
+    rate: 2.75,
     maxLength: 10
   },
-  'March (Regular)': {
+  'Marching (Regular)': {
     rate: 2,
     maxLength: 10
   },
-  'March (Shambling/Horde)': {
-    rate: 1,
-    maxLength: 24
+  'Shambling Horde (Tireless, Disorganized)': {
+    rate: 0.5,
+    maxLength: 20
   },
   'Merchant Ship': {
     rate: 6,
     maxLength: 24
   },
-  'Agata (10hr/d)':  {
+  'Bound Agata':  {
     rate: 30,
     maxLength: 10
   },

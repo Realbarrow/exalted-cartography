@@ -1,4 +1,4 @@
-const scale = 3.5;
+const scale = 1.728395061728395‬;
 const lineHeight = 32;
 const transportation = {
   'Horse (10hr/d)': {

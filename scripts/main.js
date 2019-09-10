@@ -1,19 +1,19 @@
 const scale = 3.5;
-const lineHeight = 28;
+const lineHeight = 24;
 const transportation = {
-  'Horseback (Regular)': {
+  'Horseback (Standard)': {
     rate: 4,
     maxLength: 10
   },
   'Horseback (Courier)': {
-    rate: 12,
+    rate: 10,
     maxLength: 10
   },
-  'Marching (Legionary or Forced)': {
+  'Marching (Legionary/Forced)': {
     rate: 2.75,
     maxLength: 10
   },
-  'Marching (Regular)': {
+  'Marching (Typical)': {
     rate: 2,
     maxLength: 10
   },
@@ -141,7 +141,7 @@ const click = (e, journey, context) => {
 window.onload = () => {
   const map = document.getElementById('map');
   const context = map.getContext('2d');
-  context.font = 'Bold 28px Arial';
+  context.font = 'Bold 24px Arial';
 
   const journey = {
     start: null,
